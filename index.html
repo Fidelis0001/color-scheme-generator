@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Color Scheme Generator by Fidelis</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="heading">Color Scheme generator</h1>
+    </header>
+    <section id="color-choosing-bar">
+      <input type="color" id="seed-color" />
+      <select name="mode" id="mode">
+        <option value="monochrome" name="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Monochrome-dark</option>
+        <option value="monochrome-light">Monochrome-light</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic-complement</option>
+        <option value="triad">Triad</option>
+        <option value="quad">Quad</option>
+      </select>
+      <button id="get-color-scheme-btn">Get color scheme</button>
+    </section>
+    <main>
+      <div id="color-grid">
+        <div id="colors">
+          <div id="color-0"></div>
+          <div id="color-1"></div>
+          <div id="color-2"></div>
+          <div id="color-3"></div>
+          <div id="color-4"></div>
+        </div>
+        <div id="color-hex-codes">
+          <span id="color-0-hex" class="copy-hex"> </span>
+          <span id="color-1-hex" class="copy-hex"> </span>
+          <span id="color-2-hex" class="copy-hex"> </span>
+          <span id="color-3-hex" class="copy-hex"> </span>
+          <span id="color-4-hex" class="copy-hex"> </span>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script rel="script" src="index.js" type="module"></script>
+</html>

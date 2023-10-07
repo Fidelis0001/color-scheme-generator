@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+  font-family: fantasy, sans-serif;
+  background-color: whitesmoke;
+}
+
+#heading {
+  font-family: fantasy, sans-serif;
+}
+
+#color-choosing-bar {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  font-weight: 400;
+  justify-content: space-between;
+  max-width: 600px;
+}
+
+#seed-color {
+  margin-right: auto;
+  margin-left: 0;
+  height: 2.75rem;
+  width: 20%;
+}
+
+#mode {
+  margin: 0 auto;
+  width: 40%;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-family: fantasy, sans-serif;
+  transition: all 0.5s ease;
+  border: 0.01px solid rgb(186, 185, 185);
+  color: rgb(56, 56, 56);
+}
+
+#mode:hover,
+#seed-color:hover,
+#get-color-scheme-btn:hover {
+  box-shadow: 0 0 4px rgb(204, 204, 204);
+}
+
+#get-color-scheme-btn {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(205, 205, 206);
+  padding: 0.5em 0.5em;
+  font-size: 0.85rem;
+  font-family: fantasy, sans-serif;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+#get-color-scheme-btn:hover {
+  background-color: rgb(170, 170, 162);
+  color: rgb(65, 62, 62);
+}
+
+#color-choosing-bar,
+#color-grid {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+#color-grid {
+  margin-top: 5px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 0;
+  text-align: center;
+  height: 80vh;
+  padding: 0;
+  justify-content: center;
+}
+
+#color-0,
+#color-1,
+#color-2,
+#color-3,
+#color-4 {
+  width: 18vw;
+  max-height: 85vh;
+}
+#color-hex-codes,
+#colors {
+  display: flex;
+  flex-direction: row;
+}
+
+#colors {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+#color-hex-codes {
+  grid-column: 1/-1;
+  grid-row: -1;
+  background-color: whitesmoke;
+  color: rgb(31, 30, 30);
+}
+
+#color-0-hex,
+#color-1-hex,
+#color-2-hex,
+#color-3-hex,
+#color-4-hex {
+  width: 18vw;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#color-0 {
+  background-color: rgb(90, 167, 236);
+}
+
+#color-1 {
+  background-color: rgb(178, 162, 193);
+}
+
+#color-2 {
+  background-color: cornflowerblue;
+}
+
+#color-3 {
+  background-color: brown;
+}
+
+#color-4 {
+  background-color: rgb(27, 77, 77);
+}
+.copy-hex:hover,
+.copy-hex:active,
+.copy-hex:focus {
+  color: rgb(146, 140, 147);
+}
+
+@media (min-width: 480px) {
+  #mode {
+    width: 45%;
+    font-size: 1.1rem;
+  }
+  #get-color-scheme-btn {
+    font-size: 0.99rem;
+  }
+  #seed-color {
+    width: 23%;
+    max-width: 85px;
+  }
+}
