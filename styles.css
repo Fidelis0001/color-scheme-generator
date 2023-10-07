@@ -2,12 +2,12 @@ body {
   margin: 0;
   font-size: 1rem;
   text-align: center;
-  font-family: fantasy, sans-serif;
+  font-family: Helvetica, sans-serif;
   background-color: whitesmoke;
 }
 
 #heading {
-  font-family: fantasy, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 #color-choosing-bar {
@@ -32,7 +32,7 @@ body {
   cursor: pointer;
   border-radius: 5px;
   font-size: 0.85rem;
-  font-family: fantasy, sans-serif;
+  font-family: Helvetica, sans-serif;
   transition: all 0.5s ease;
   border: 0.01px solid rgb(186, 185, 185);
   color: rgb(56, 56, 56);
@@ -50,7 +50,7 @@ body {
   background-color: rgb(205, 205, 206);
   padding: 0.5em 0.5em;
   font-size: 0.85rem;
-  font-family: fantasy, sans-serif;
+  font-family: Helvetica, sans-serif;
   margin-left: auto;
   margin-right: 0;
 }
